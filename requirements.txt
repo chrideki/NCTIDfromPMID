@@ -3,3 +3,4 @@ biopython
 pandas
 requests
 streamlit
+openpyxl
