@@ -1,6 +1,5 @@
 Bio
 biopython
-Entrez
 pandas
 time
 csv
