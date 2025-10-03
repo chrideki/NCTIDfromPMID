@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[130]:
-
-
 from Bio import Entrez
 import pandas as pd
 import time
@@ -12,23 +9,6 @@ import requests
 import xml.etree.ElementTree as ET
 import re
 import streamlit as st
-
-
-# In[75]:
-
-
-# Read the Excel file into a DataFrame
-df = pd.read_excel("PMIDs_UCCCmemberFirstorSeniorAuthor.xlsx")
-
-
-# In[77]:
-
-
-pmid_list = df['PMID'].astype(str).tolist()
-
-
-# In[123]:
-
 
 def chunk_list(lst, size):
     for i in range(0, len(lst), size):
@@ -151,9 +131,6 @@ def fetch_nct_ids_combined(pmids, batch_size=200, email="christian.goldoni@gmail
     return results
 
 
-# In[160]:
-
-
 st.title("PMID to NCT ID Lookup")
 
 uploaded_file = st.file_uploader("Upload Excel with PMIDs")
@@ -175,7 +152,6 @@ if uploaded_file:
     
 
 
-# In[ ]:
 
 
 
