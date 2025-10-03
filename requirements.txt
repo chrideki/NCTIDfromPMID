@@ -1,7 +1,6 @@
 Bio
 biopython
 pandas
-time
 csv
 requests
 xml.etree.ElementTree
