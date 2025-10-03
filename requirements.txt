@@ -1,9 +1,10 @@
+Bio
 biopython
 Entrez
-pandas as pd
+pandas
 time
 csv
 requests
-xml.etree.ElementTree as ET
+xml.etree.ElementTree
 re
-streamlit as st
+streamlit
